@@ -1,0 +1,23 @@
+
+
+{% if not session.logged_in %}
+  <h4>login</h4>
+  {% if error %}<p class=error><strong>error:</strong> {{ error }}{% endif %}
+  <form action="{{ url_for('login') }}" method=post>
+    <dl>
+      <dt>username:
+      <dd><input type=text name=username>
+      <dt>password:
+      <dd><input type=password name=password>
+      <dd><input type=submit value=login>
+    </dl>
+  </form>
+
+  {% else %}
+    <a href="{{ url_for('logout') }}">log out</a>
+  {% endif %}
+   {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+{% endfor %}
+
+
