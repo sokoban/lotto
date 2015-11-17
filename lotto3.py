@@ -21,10 +21,10 @@ app = Flask(__name__)
 #mysql = MySQL()
 app.config['SECRET_KEY'] = '123456790'
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'tnwlEkfkdgo^7'
+app.config['MYSQL_DATABASE_PASSWORD'] = ''
 app.config['MYSQL_DATABASE_DB'] = 'lotto645'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:tnwlEkfkdgo^7@221.143.42.85:3306/netscan_server'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://'
 #mysql.init_app(app)
 
 db = SQLAlchemy(app)
