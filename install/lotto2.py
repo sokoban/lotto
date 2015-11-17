@@ -23,7 +23,7 @@ app.config['SECRET_KEY'] = '123456790'
 # Create in-memory database
 #app.config['DATABASE_FILE'] = 'sqlite_db.db'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + app.config['DATABASE_FILE']
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:tnwlEkfkdgo^7@221.143.42.85/lotto645'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@221.143.42.85/lotto645'
 #app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 
