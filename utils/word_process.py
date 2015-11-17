@@ -8,7 +8,7 @@ from nltk.corpus import conll2000
 
 Base = declarative_base()
 
-engine = create_engine('mysql://root:tnwlEkfkdgo^7@221.143.42.85:19999/netscan_server')
+engine = create_engine('mysql://root:@221.143.42.85:19999/netscan_server')
 
 class Newsfeeds(Base):
     __tablename__ = "newsfeeds"
