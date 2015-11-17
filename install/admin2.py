@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '123456790'
 
 #MySQL
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:tnwlEkfkdgo^7@221.143.42.85/lotto645'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@221.143.42.85/lotto645'
 db = SQLAlchemy(app)
 
 # SQLite
